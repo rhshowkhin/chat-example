@@ -1,3 +1,8 @@
+My-Chat-Application
+
+by https://github.com/rhshowkhin/My-Chat-Application
+
+
 # chat-example
 
 This is the source code for a very simple chat example used for
