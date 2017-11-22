@@ -4,7 +4,7 @@ var io = require('socket.io')(http);
 var port = process.env.PORT || 3000;
 
 app.get('/', function(req, res){
-  res.send('<h1>Hello world</h1>');
+  res.sendFile(__dirname + '/index.html');
 });
 
 io.on('connection', function(socket){
@@ -13,6 +13,6 @@ io.on('connection', function(socket){
   });
 });
 
-http.listen(3000, function(){
-  console.log('listening on *:3000');
+http.listen(port, process.env.IP, function(){
+  console.log('listening on *:' + port);
 });
